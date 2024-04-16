@@ -20,6 +20,8 @@
   </head>
   <body>
     <div class="container">
+      <!-- Navbar code -->
+
       <nav class="navbar navbar-expand-lg bg-dark p-2">
         <a class="navbar-brand" href="../../index.html"
           ><img class="logo" src="../assests/images/dark-logo.png" alt="Logo"
@@ -107,70 +109,233 @@
           </form>
         </div>
       </nav>
-      <main>
-        <div
-          id="myCarousel"
-          class="carousel slide mb-6"
-          data-bs-ride="carousel"
+
+      <!-- Carousel code -->
+
+      <div
+        id="myCarousel"
+        class="carousel slide mb-6 pb-3 border-bottom"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../assests/images/appetizer/prawn-carousel-1.png"
+              alt=""
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../assests/images/appetizer/prawn-carousel-2.png"
+              alt=""
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../assests/images/appetizer/prawn-carousel-3.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
         >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../assests/images/appetizer-carousel-1.png" alt="" />
-            </div>
-            <div class="carousel-item">
-              <img src="../assests/images/appetizer-carousel-2.png" alt="" />
-            </div>
-            <div class="carousel-item">
-              <img src="../assests/images/appetizer-carousel-3.png" alt="" />
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Food title box -->
+
+      <main>
+        <div class="spikes">
+          <div class="p-4 mb-4 bg-body-tertiary rounded-3">
+            <div class="py-3">
+              <h1 class="display-5 fw-bold">Prawn Cocktail</h1>
+              <p class="col-md-8 fs-4">R70.00</p>
+              <button
+                class="btn btn-lg text-light place-order"
+                style="background-color: #5b5b5b"
+                type="button"
+              >
+                Place Order
+              </button>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        </div>
+
+        <!-- Food img box -->
+
+        <div class="row align-items-md-stretch mb-5">
+          <div class="col-md-6">
+            <div class="h-100 p-3 text-bg-dark rounded-3 menu-item-img">
+              <img
+                class="rounded"
+                src="../assests/images/appetizer/prawn-cocktail.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <!-- Description box -->
+
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-dark text-light border rounded-3">
+              <h2>Description</h2>
+              <p>
+                Indulge in this exquisite dish, featuring three succulent shrimp
+                delicately served with creamy avocado, tender asparagus spears,
+                refreshing cucumber slices, and a tantalizing drizzle of our
+                signature tangy cocktail sauce.
+                <br />
+                <br />
+                <br />
+                <b>Serves 1</b>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Side dish selection box -->
+
+        <div class="row mb-5 align-items-md-stretch">
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-dark text-light border rounded-3">
+              <h3>Selection of Gourmet Side Dishes</h3>
+              <ul class="side-order">
+                <li class="pb-1">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="side-dish"
+                      value="truffle-parmesan-fries"
+                    />
+                    Truffle Parmesan Fries
+                  </label>
+                </li>
+                <li class="pb-1">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="side-dish"
+                      value="grilled-vegetables"
+                    />
+                    Grilled Vegetables with Balsamic Glaze
+                  </label>
+                </li>
+                <li class="pb-1">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="side-dish"
+                      value="wild-mushroom-risotto"
+                    />
+                    Wild Mushroom Risotto
+                  </label>
+                </li>
+                <li class="pb-1">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="side-dish"
+                      value="garlic-mashed-potatoes"
+                    />
+                    Garlic Mashed Potatoes
+                  </label>
+                </li>
+                <li class="pb-1">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="side-dish"
+                      value="roasted-brussels-sprouts"
+                    />
+                    Roasted Brussels Sprouts with Bacon
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Additional request box -->
+
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-dark text-light border rounded-3">
+              <h2>Additional Requests</h2>
+
+              <!-- Additional request box - form -->
+
+              <form>
+                <label for="notes">Changes to meal:</label>
+                <br />
+                <input
+                  class="w-100 py-2 mt-1"
+                  type="text"
+                  id="notes"
+                  name="notes"
+                  placeholder="Enter any special requests..."
+                />
+                <br />
+                <br />
+                <label for="notes">Dietary Notes:</label>
+                <br />
+                <input
+                  class="w-100 py-2 mt-1"
+                  type="text"
+                  id="notes"
+                  name="notes"
+                  placeholder="Enter any dietery requests..."
+                />
+              </form>
+            </div>
+          </div>
         </div>
       </main>
+
+      <!-- Footer -->
+
       <footer
         class="d-flex flex-wrap justify-content-between align-items-center py-3 bg-dark border-bottom"
       >
         <p class="col-md-4 mb-0 text-light px-2 name">
           &copy; 2024 Designed by
+
+          <!-- Footer link to Lnkedin page -->
+
           <a
             href="https://www.linkedin.com/in/jade-harris-b623b9242/"
             target="_blank"

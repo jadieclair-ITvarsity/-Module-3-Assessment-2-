@@ -1,4 +1,8 @@
-/*
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: system-ui, -apple-system, sans-serif;
@@ -6,10 +10,6 @@ body {
   line-height: 1.5;
   margin: 0;
 }
-
-section {
-  padding-block: 50px;
-} */
 
 /* Home page */
 
@@ -82,10 +82,9 @@ header {
 /* Food Menu Page */
 
 .food-menu-container {
-  background: url("./restaurant-menu-app/assests/images/appetizer-bg.png")
-    no-repeat;
-  background-position: center; /* Center the background image */
-  background-size: 100% auto; /* Make sure the image covers the entire width */
+  background: url("./restaurant-menu-app/assests/images/menu-bg.png") no-repeat;
+  background-position: center;
+  background-size: 100% auto;
   width: 100%;
   margin: auto;
 }
@@ -101,7 +100,7 @@ header {
 .food-menu-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-block: 40px;
+  padding-block: 60px;
 }
 
 .food-menu-item h2 {
@@ -115,18 +114,61 @@ header {
   color: #847276;
 }
 
-.food-menu-item :last-child {
+.food-menu-item-last {
   padding-bottom: 50px;
 }
 
 .food-menu-item a {
   text-decoration: none;
   color: #474646;
+  /* color: #3a4047; */
 }
 
 .food-menu-item a:hover {
   text-decoration: none;
   color: #847276;
+}
+
+.place-order:hover {
+  background-color: #3d3d3d !important;
+}
+
+/* Food option page */
+
+.menu-item-img img {
+  width: 100%;
+}
+
+.chocolate-desc {
+  background: url("./restaurant-menu-app/assests/images/desserts/chocolate-desc-bg.png")
+    no-repeat top;
+  background-image: cover;
+}
+
+.tiramisu-desc {
+  background: url("./restaurant-menu-app/assests/images/desserts/tiramisu-desc-bg.png")
+    no-repeat top;
+  background-size: cover;
+}
+
+.chocolate-desc p {
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+/* Beverage Item menu page*/
+
+.beverage-title {
+  padding-top: 48px;
+}
+
+.beverage-menu-item {
+  margin: 0 30px;
+}
+
+.beverage-menu-item li,
+.side-order li {
+  list-style-type: none;
 }
 
 /* Food Item Option page*/
@@ -139,23 +181,7 @@ header {
 
 /* Food categories */
 
-/* 
-.wrapper {
-  max-width: 500rem;
-  margin-inline: auto;
-  padding: 1rem;
-}
-
-.site-title {
-  font-size: 3rem;
-  text-align: center;
-}
-
-.section-title {
-  font-size: 2.25rem;
-}
-
-.diagonal {
+/* .diagonal {
   position: relative;
   isolation: isolate;
 }
@@ -167,12 +193,11 @@ header {
   inset: 0;
   transform: skewY(-5deg);
   z-index: -1;
-}
+} */
 
 .spikes {
   position: relative;
   color: #000;
-  background: linear-gradient(to right, #fdc830, #f37335);
 }
 
 .spikes::before,
@@ -180,9 +205,12 @@ header {
   content: "";
   position: absolute;
   width: 100%;
-  height: 50px;
-  background: purple;
-  -webkit-mask-image: url("assests/triangle.svg");
+  height: 40px;
+  background: linear-gradient(to right, #212529, #474a4e, #fdfdfc);
+  -webkit-mask-image: url("./restaurant-menu-app/assests/triangle.svg");
+  -webkit-mask-size: 15px 50px;
+  mask-image: url("./restaurant-menu-app/assests/triangle.svg");
+  mask-size: 15px 50px;
 }
 
 .spikes::before {
@@ -194,7 +222,7 @@ header {
   transform: rotate(0.5turn);
 }
 
-.roof {
+/* .roof {
   position: relative;
   color: #000;
   background: linear-gradient(to right, #fdc830, #f37335);
@@ -242,8 +270,14 @@ header {
     font-size: 14px;
   }
 
-  .food-menu-item :last-child {
+  .food-menu-item-last {
     padding-bottom: 30px;
+  }
+
+  /* Beverage menu */
+
+  .beverage-menu-item li {
+    font-size: 11px;
   }
 
   /* Footer */
@@ -281,8 +315,19 @@ header {
     font-size: 10px;
   }
 
-  .food-menu-item :last-child {
+  .food-menu-item-last {
     padding-bottom: 18px;
+  }
+
+  /* Beverage menu */
+
+  .beverage-title {
+    padding-top: 10px;
+    padding-block: 0;
+  }
+
+  .beverage-menu-item li {
+    font-size: 8px;
   }
 
   /* Footer */
@@ -314,7 +359,7 @@ header {
     font-size: 8px;
   }
 
-  .food-menu-item :last-child {
+  .food-menu-item-last {
     padding-bottom: 8px;
   }
 
