@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfect Palate | Beverages</title>
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../assests/font-awesome/css/all.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-dark p-2">
+        <a class="navbar-brand" href="../../index.html"
+          ><img class="logo" src="../assests/images/dark-logo.png" alt="Logo"
+        /></a>
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item text-dark"
+                    href="../food-categories/appetizer-menu.html"
+                    >Appetizers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-dark"
+                    href="../food-categories/entree-menu.html"
+                    >Entrees</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-dark"
+                    href="../food-categories/dessert-menu.html"
+                    >Desserts</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-dark"
+                    href="../food-categories/beverage-menu.html"
+                    >Beverages</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact.html" aria-disabled="true"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <main>
+        <div class="drinks-menu-container px-2">
+          <!-- <div class="food-menu">
+            <h1 class="ps-4 beverage-title">
+              Beverage <br />
+              Menu
+            </h1>
+          </div> -->
+          <div class="row">
+            <div class="col-lg-6 beverage-item" id="Champagne">
+              <img
+                class="img-fluid py-4"
+                src="../assests/images/drinks/moet.png"
+                alt=""
+              />
+              <h2 class="fw-normal mt-2">Moët & Chandon Imperial Brut</h2>
+              <h5><i class="fa-solid fa-tag"></i> R659.00</h5>
+              <p>
+                A palate combining generosity and subtlety -The delicious
+                generosity of white fruits (pear, peach, apple) -The alluring
+                caress of fine bubbles -The soft vivacity of citrus fruit and
+                gooseberry nuances
+              </p>
+              <p>
+                <a class="btn btn-secondary" href="../success-page.html"
+                  >Place Order</a
+                >
+              </p>
+            </div>
+
+            <div class="col-lg-6 beverage-item">
+              <img
+                class="img-fluid py-2"
+                src="../assests/images/drinks/rose-brut.avif"
+                alt=""
+              />
+              <h2 class="fw-normal mt-2">Veuve Clicquot Rose Brut</h2>
+              <h5><i class="fa-solid fa-tag"></i> R1165.00</h5>
+              <p>
+                A full-bodied, deliciously fruity palate with prominent hints of
+                ripe strawberry and cherry. A lingering biscuit note finishes
+                with a soft dried fruit note.
+              </p>
+              <p>
+                <a class="btn btn-secondary" href="../success-page.html"
+                  >Place Order</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- Red Wines-->
+
+          <div class="row">
+            <div class="col-lg-6 beverage-item" id="red-wine">
+              <img
+                class="img-fluid py-3"
+                src="../assests/images/drinks/chateau.png"
+                alt=""
+              />
+              <h2 class="fw-normal mt-2">
+                Bordeaux - <br />
+                Château Lynch-Bages
+              </h2>
+              <h5><i class="fa-solid fa-tag"></i> R1 550.00</h5>
+              <p>
+                Lynch-Bages 2020 is beautifully sun-ripened, with freshness and,
+                good acidity. This is underpinned by very ripe but powerful
+                tannins, matching the levels found in ’18 and ’19.
+              </p>
+              <p>
+                <a class="btn btn-secondary" href="../success-page.html"
+                  >Place Order</a
+                >
+              </p>
+            </div>
+
+            <div class="col-lg-6 beverage-item">
+              <img
+                class="img-fluid py-2"
+                src="../assests/images/drinks/cabernet-sauvignon.png"
+                alt=""
+              />
+              <h2 class="fw-normal mt-2">
+                Black Oak California Cabernet Sauvignon
+              </h2>
+              <h5><i class="fa-solid fa-tag"></i> R479.00</h5>
+              <p>
+                Is a deep red-violet color in the glass. There are notes of
+                fruity cassis and blackberry on entry that give way to toasty
+                oak and coconut with a hint of mocha. The wine has a nice,
+                vibrant fruit and lifting acidity that compliments a wide range
+                of foods.
+              </p>
+              <p>
+                <a class="btn btn-secondary" href="../success-page.html"
+                  >Place Order</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- White Wines-->
+
+          <div class="row">
+            <div class="col-lg-6 beverage-item" id="white-wine">
+              <img
+                class="img-fluid"
+                src="../assests/images/drinks/louis-jadot-chassagne.png"
+                alt=""
+              />
+              <h2 class="fw-normal mt-2">
+                Burgundy - Louis Jadot Puligny-Montrachet
+              </h2>
+              <h5><i class="fa-solid fa-tag"></i> R1 738.00</h5>
+              <p>
+                Is made from Chardonnay grapes and is known for its crisp,
+                clean, and refreshing taste. The wine is aged in oak barrels,
+                which gives it a distinct complexity and depth of flavor.
+              </p>
+              <p>
+                <a class="btn btn-secondary" href="../success-page.html"
+                  >Place Order</a
+                >
+              </p>
+            </div>
+
+            <div class="col-lg-6 beverage-item">
+              <img
+                class="img-fluid py-4"
+                src="../assests/images/drinks/loosen.webp"
+                alt=""
+              />
+              <h2 class="fw-normal mt-2">
+                German - <br />
+                Dr. Loosen Riesling
+              </h2>
+              <h5><i class="fa-solid fa-tag"></i> R1 465.00</h5>
+              <p>
+                Is sourced exclusively from vineyards with steep slopes and
+                slate soil, this wine embodies the elegant and racy style of
+                classic Mosel Riesling. Displaying snappy peach and juicy citrus
+                fruit highlighted by crisp mineral notes on the complex finish.
+              </p>
+              <p>
+                <a class="btn btn-secondary" href="../success-page.html"
+                  >Place Order</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- Non alcoholic lemonade -->
+
+          <div class="row">
+            <div class="col-lg-12 text-center beverage-item" id="non-alcoholic">
+              <img
+                class="img-fluid"
+                src="../assests/images/drinks/lemonade.png"
+                alt=""
+              />
+              <h2 class="fw-normal mt-2">Sparkling Elderflower Lemonade</h2>
+              <h5><i class="fa-solid fa-tag"></i> R45.95</h5>
+              <p>
+                Is made with the most fragrant elderflower,
+                <br />
+                squeezed Sicilian lemons and blended with sweet pressed apples.
+              </p>
+              <p>
+                <a class="btn btn-secondary" href="../success-page.html"
+                  >Place Order</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 bg-dark border-bottom"
+      >
+        <p class="col-md-4 mb-0 text-light px-2 name">
+          &copy; 2024 Designed by
+          <a
+            href="https://www.linkedin.com/in/jade-harris-b623b9242/"
+            target="_blank"
+            ><i>Jade Harris</i></a
+          >
+        </p>
+        <img class="logo" src="../assests/images/dark-logo.png" alt="Logo" />
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="../../index.html" class="nav-link px-2">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="../about.html" class="nav-link px-2">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="../contact.html" class="nav-link px-2">Contact</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

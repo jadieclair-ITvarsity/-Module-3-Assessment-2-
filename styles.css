@@ -205,12 +205,35 @@ header {
   list-style-type: none;
 }
 
+/* Drinks options page */
+
+/* .drinks-menu-container {
+  background: url("./restaurant-menu-app/assests/images/drinks/drinks-options-bg.png")
+    no-repeat;
+  background-size: contain;
+} */
+
+.beverage-item img {
+  max-width: 160px !important;
+  backdrop-filter: blur(15px);
+  background-color: #b8b7b7;
+  border-radius: 20px;
+  padding: 12px;
+  margin-top: 12px;
+}
+
+.beverage-item p {
+  margin-right: 30px;
+  font-weight: 600;
+}
+
 /* Food Item Option page*/
 
 /* Carousel display */
 
 .carousel-item img {
   width: 100%;
+  height: auto;
 }
 
 /* Food categories */
