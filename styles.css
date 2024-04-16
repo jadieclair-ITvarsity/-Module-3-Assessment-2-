@@ -131,6 +131,39 @@ header {
   background-size: cover;
 }
 
+.about-map-container {
+  overflow: hidden;
+}
+
+/* Contact page */
+
+/* Contact form */
+
+.contact-form {
+  margin: 0 auto;
+  background-color: #f8f9fa;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
 /* Food option page */
 
 .menu-item-img img {
