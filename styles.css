@@ -20,8 +20,9 @@
   position: relative;
   background: url("./restaurant-menu-app/assests/images/main-bg.png") no-repeat
     center;
-  height: 100vh;
   width: 100%;
+  min-height: 100vh;
+  background-size: cover;
 }
 
 header {
@@ -52,6 +53,10 @@ header {
 
 /* Footer */
 
+.name {
+  font-size: 15px;
+}
+
 .name a {
   color: #ffffff;
   text-decoration: none;
@@ -75,9 +80,7 @@ header {
 .food-menu-container {
   background: url("./restaurant-menu-app/assests/images/menu-bg.png") no-repeat;
   background-position: center;
-  background-size: 100% auto;
-  width: 100%;
-  margin: auto;
+  background-size: cover;
 }
 
 .food-menu h1 {
@@ -207,12 +210,6 @@ header {
 
 /* Drinks options page */
 
-/* .drinks-menu-container {
-  background: url("./restaurant-menu-app/assests/images/drinks/drinks-options-bg.png")
-    no-repeat;
-  background-size: contain;
-} */
-
 .beverage-item img {
   max-width: 160px !important;
   backdrop-filter: blur(15px);
@@ -237,20 +234,6 @@ header {
 }
 
 /* Food categories */
-
-/* .diagonal {
-  position: relative;
-  isolation: isolate;
-}
-
-.diagonal::after {
-  content: "";
-  background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
-  position: absolute;
-  inset: 0;
-  transform: skewY(-5deg);
-  z-index: -1;
-} */
 
 .spikes {
   position: relative;
@@ -279,202 +262,44 @@ header {
   transform: rotate(0.5turn);
 }
 
-/* .roof {
-  position: relative;
-  color: #000;
-  background: linear-gradient(to right, #fdc830, #f37335);
-}
-
-.roof::before,
-.roof::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 50px;
-  background: purple;
-  -webkit-mask-image: url("assests/triangle.svg");
-  -webkit-mask-size: 10px 50px;
-  mask-image: url("assests/triangle.svg");
-  mask-size: 10px 50px;
-}
-
-.roof::before {
-  top: 0;
-}
-
-.roof::after {
-  bottom: 0;
-  transform: rotate(0.5turn);
-} */
-
-/* Media Queries */
-
-@media (max-width: 992px) {
-  .food-menu h1 {
-    font-size: 26px;
-    padding: 10px;
-  }
-
-  .food-menu-item {
-    padding-block: 30px;
-  }
-
-  .food-menu-item h2 {
-    font-size: 18px;
-  }
-
-  .food-menu-item p {
-    font-size: 14px;
-  }
-
-  .food-menu-item-last {
-    padding-bottom: 30px;
-  }
-
-  /* Beverage menu */
-
-  .beverage-menu-item li {
-    font-size: 11px;
-  }
-
-  /* Footer */
-
-  .name {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 767px) {
-  .home-title h1 {
-    font-size: 25px;
-    font-weight: 700;
-  }
-
-  .home-title h2 {
-    font-size: 18px;
-    font-weight: 500;
-    padding-bottom: 15px;
-  }
-
-  .food-menu h1 {
-    font-size: 18px;
-  }
-
-  .food-menu-item {
-    padding-block: 18px;
-  }
-
-  .food-menu-item h2 {
-    font-size: 13px;
-  }
-
-  .food-menu-item p {
-    font-size: 10px;
-  }
-
-  .food-menu-item-last {
-    padding-bottom: 18px;
-  }
-
-  /* Beverage menu */
-
-  .beverage-title {
-    padding-top: 10px;
-    padding-block: 0;
-  }
-
-  .beverage-menu-item li {
-    font-size: 8px;
-  }
-
-  /* Footer */
-
-  .name {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 530px) {
-  .home-title h2 {
-    font-size: 15px;
+@media screen and (max-width: 767px) {
+  .food-menu-container p {
+    color: #000;
     font-weight: 400;
-  }
-
-  .food-menu h1 {
-    font-size: 14px;
-  }
-
-  .food-menu-item {
-    padding-block: 8px;
-  }
-
-  .food-menu-item h2 {
-    font-size: 10px;
-  }
-
-  .food-menu-item p {
-    font-size: 8px;
-  }
-
-  .food-menu-item-last {
-    padding-bottom: 8px;
-  }
-
-  /* Footer */
-
-  .name {
-    font-size: 10px;
-  }
-
-  footer li.nav-item a {
-    font-size: 10px;
+    backdrop-filter: blur(1px);
   }
 }
 
-@media (max-width: 450px) {
-  .home-title a.btn {
-    display: flex;
-    width: 75px;
-    font-size: 10px;
-    margin: 0 auto !important;
-    margin-bottom: 10px !important;
+@media screen and (max-width: 575px) {
+  .home-title h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px !important;
+  }
+}
+
+@media screen and (max-width: 536px) {
+  .home-menu-btn {
+    font-size: 12px !important;
   }
 
-  img.logo {
+  footer img.logo {
     display: none;
   }
+}
 
+@media screen and (max-width: 425px) {
   .food-menu-container {
     background: none;
   }
-
-  .food-menu-item p,
-  .food-menu-item h2 {
-    text-align: center;
-  }
-
-  .food-menu-item h2 {
-    padding-right: 30px;
-  }
-
-  .food-menu-item {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .food-menu-item i {
-    display: none;
-  }
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
   .home-title h1 {
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 25px;
   }
 
   .home-title h2 {
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 14px;
   }
 }
