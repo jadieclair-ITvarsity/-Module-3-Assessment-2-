@@ -214,9 +214,8 @@ header {
   margin-top: 12px;
 }
 
-.beverage-item p {
-  margin-right: 30px;
-  font-weight: 600;
+.beverage-item {
+  margin-bottom: 15px;
 }
 
 /* Food Item Option page*/
