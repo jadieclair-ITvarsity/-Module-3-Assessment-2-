@@ -92,9 +92,7 @@ header {
 }
 
 .food-menu-item {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding-block: 60px;
+  padding-block: 70px;
 }
 
 .food-menu-item h2 {
@@ -102,14 +100,11 @@ header {
 }
 
 .food-menu-item p {
+  max-width: 80%;
   font-size: 18px;
-  margin: 0 40px;
-  padding-left: 25px;
+  margin-left: 40px;
+  padding-left: 40px;
   color: #847276;
-}
-
-.food-menu-item-last {
-  padding-bottom: 50px;
 }
 
 .food-menu-item a {
