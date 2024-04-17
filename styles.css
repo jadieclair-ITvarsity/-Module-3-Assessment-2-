@@ -176,7 +176,7 @@ header {
 
 .tiramisu-desc {
   background: url("./restaurant-menu-app/assests/images/desserts/tiramisu-desc-bg.png")
-    no-repeat top;
+    no-repeat bottom;
   background-size: cover;
 }
 
