@@ -267,7 +267,7 @@ header {
 
 @media screen and (max-width: 575px) {
   .home-title h2 {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     margin-bottom: 20px !important;
   }
@@ -276,6 +276,7 @@ header {
 @media screen and (max-width: 536px) {
   .home-menu-btn {
     font-size: 14px !important;
+    text-align: center;
   }
 
   footer img.logo {
@@ -287,16 +288,23 @@ header {
   .food-menu-container {
     background: none;
   }
-}
 
-@media screen and (max-width: 375px) {
   .home-title h1 {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 700;
   }
 
   .home-title span {
     line-height: normal;
-    letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .home-title h1 {
+    font-size: 25px;
+  }
+
+  .home-menu-btn {
+    font-size: 12px !important;
   }
 }
